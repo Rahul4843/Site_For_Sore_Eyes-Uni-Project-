@@ -1,0 +1,132 @@
+:root {
+    --Primary-color: #FFE5B4;
+    --seconday-color: #9EFFE0;
+    --Tertiary-color: #E09eff;
+}
+
+/* Home Page */
+
+.nav {
+    flex-direction: column;
+    height: fit-content;
+    width: 100vw;
+
+}
+
+.leftnav {
+    width: 20rem;
+}
+
+.midnav {
+    width: 20rem;
+}
+
+.midnav ul {
+    flex-wrap: wrap;
+}
+
+.container {
+    flex-direction: column;
+    height: 50rem;
+}
+
+.rightcontainer img {
+    margin: 12px auto;
+
+}
+
+.quotes {
+    flex-direction: column;
+    height: fit-content;
+    width: 28rem;
+    margin: auto;
+}
+
+.quotes h3,
+h5 {
+    align-items: center;
+    width: 20rem;
+    margin: auto;
+}
+
+.aboutme {
+
+    flex-direction: column;
+}
+
+.aboutmeleft {
+    width: fit-content;
+
+}
+
+#personal info {
+    height: fit-content;
+}
+
+.footersection {
+    margin-top: 28rem;
+}
+
+/* Skills Page */
+.myskills {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+/* Designs */
+.company_container {
+    flex-direction: column;
+    height: fit-content;
+}
+
+.l_company_container {
+    width: fit-content;
+}
+
+.l_company_container img {
+    width: 18rem;
+    border-radius: 20rem;
+    margin: auto;
+    border-bottom: 2px solid var(--Tertiary-color);
+
+}
+
+.testimonial {
+    height: fit-content;
+    flex-direction: column;
+
+}
+
+.firsttest {
+    border-bottom: 2px solid var(--Tertiary-color);
+}
+
+/* My experiences */
+.My_experiences {
+    flex-direction: column;
+}
+
+.firstexperiences {
+    flex-direction: column;
+}
+
+/* Gallery Page */
+.gallery {
+    flex-wrap: wrap;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.mygalleries {
+    margin: 9px;
+
+}
+
+.formfillup {
+    width: fit-content;
+
+}

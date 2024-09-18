@@ -1,0 +1,612 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+:root {
+  --Primary-color: #ffe5b4;
+  --seconday-color: #9effe0;
+  --Tertiary-color: #e09eff;
+}
+
+.nav {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100vw;
+  background-color: #f9f9fc;
+}
+
+.leftnav {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Primary-color);
+  border-radius: 0px 40px 40px 0px;
+  height: 70px;
+  color: rgba(0, 0, 0, 0.876);
+}
+
+.leftnav h3 {
+  /* margin-left: 15px; */
+  font-weight: bolder;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  display: block;
+  cursor: pointer;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.leftnav h3 a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  display: block;
+  cursor: pointer;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.midnav {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.midnav ul {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.midnav ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 12px;
+  padding: 7px;
+  font-size: 1.1rem;
+  font-family: "Libre Franklin", sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+
+.midnav ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.803);
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+
+.midnav ul li a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid hwb(41 62% 0%);
+  letter-spacing: 0.4px;
+  font-size: 1.31rem;
+  color: rgb(0, 0, 0);
+}
+
+.midnav ul li:hover .dropdown {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 100%;
+  background-color: #f9f9fc;
+}
+
+.dropdown {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 2rem auto;
+
+  /* border: 2px solid red; */
+  height: 50vh;
+  box-shadow: 0 1px 2px #e0e0e0;
+  border: 2px solid #e0e0e0;
+  border-radius: 2.3rem;
+  height: 29rem;
+}
+
+.leftcontainer {
+  height: 80%;
+  margin: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leftcontainer h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.leftcontainer h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.leftcontainer p {
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+.leftcontainer span {
+  color: hwb(41 62% 0%);
+  color: #e09eff;
+  font-weight: 900;
+}
+
+.leftcontainer .btn {
+  text-decoration: none;
+  margin-top: 1.5rem;
+  background-color: #e09eff;
+  /* border: 1px solid white; */
+  padding: 0.7rem 1.7rem;
+  border-radius: 0.5rem;
+  margin: auto;
+  font-weight: 600;
+  box-shadow: 0 0 1rem rgba(7, 7, 7, 0.279);
+  transition: 0.6s ease;
+  font-size: 1.1 rem;
+  color: aliceblue;
+}
+
+.leftcontainer .btn:hover {
+  font-size: 1.10009rem;
+}
+
+.rightcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-right: 2.5rem;
+}
+
+.rightcontainer img {
+  width: 400px;
+  margin-right: 12px;
+  border-radius: 20rem;
+  border: 10px solid #c7c3c366;
+  cursor: pointer;
+}
+
+.rightcontainer img:hover {
+  border: 10px solid hwb(41 62% 0%);
+  transition: 1s ease;
+}
+
+/* Quotes Section */
+.quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 7rem;
+  margin: 4rem auto;
+  border: 1px solid white;
+  box-shadow: 0 0 0.4rem rgba(7, 7, 7, 0.279);
+  background-color: #f9f9fc;
+  /* border-radius: 40px 0px 0px 40px; */
+  border-radius: 0.5rem;
+  width: 95vw;
+}
+
+.quotes h3 {
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.quotes h5 {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+/* About Me */
+#about h3 {
+  font-size: 3.1rem;
+  width: fit-content;
+  margin: 5rem auto;
+  margin-bottom: 3.3rem;
+}
+
+.aboutme {
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  height: 35rem;
+  /* border: 3px solid blue; */
+}
+
+.aboutmeleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid purple; */
+  width: 30%;
+  height: 35rem;
+  background-color: hwb(41 62% 0%);
+}
+
+.aboutmeleft img {
+  width: auto;
+  height: 35rem;
+  cursor: pointer;
+}
+
+.aboutmeright {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 23px;
+  /* border: 2px solid blue; */
+  height: fit-content;
+}
+
+.aboutmeright h3 {
+  font-size: 2.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutmeright h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.aboutmeright p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-bottom: 1px solid grey;
+  padding: 9px 0px;
+}
+
+#personalinfo h2 {
+  width: 300px;
+  padding: 12px 0px;
+  font-size: 2.1rem;
+  /* border: 1px solid aqua; */
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* border: 2px solid red; */
+  height: fit-content;
+}
+
+.info li {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.info li span {
+  font-weight: 700;
+}
+
+.info1 {
+  width: 50%;
+  /* border: 2px solid blue; */
+  height: 20rem;
+}
+
+.info2 {
+  width: 50%;
+  /* border: 2px solid aquamarine; */
+  height: 20rem;
+}
+
+/* Skills Page */
+.headingskill h1 {
+  width: fit-content;
+  margin: auto;
+  margin-top: 42px;
+  margin-bottom: 50px;
+  size: 34rem;
+}
+
+.myskills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  border: 2px solid whitesmoke;
+  border-radius: 2rem;
+  margin: auto;
+  height: 30rem;
+}
+
+.firstskills img {
+  width: 15rem;
+  border-radius: 100rem;
+}
+
+.firstskills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35%;
+  height: 35rem;
+}
+
+.firstskills h4 {
+  margin: 1rem;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.firstskills p {
+  margin: 1.5rem;
+}
+
+/* Design Page */
+.company_container {
+  margin-top: 20px;
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 20rem;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.l_company_container {
+  background-color: var(--seconday-color);
+  width: 30%;
+  margin: 12px;
+  border-radius: 15rem;
+}
+
+.l_company_container img {
+  width: 18rem;
+  border-radius: 20rem;
+}
+
+.r_company_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.company_title h1 {
+  font-size: 40px;
+  margin-top: 1px;
+  font-weight: bold;
+}
+
+.company_paragraph {
+  font-size: 24px;
+  margin: 23px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  margin: auto;
+  border: 2px solid whitesmoke;
+  border-radius: 2rem;
+}
+
+.testimonial h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  width: fit-content;
+  margin: 12px auto;
+}
+
+.firsttest {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.4rem;
+  border: 3px solid var(--Tertiary-color);
+  height: 25rem;
+}
+
+.firsttest p {
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+}
+
+.firsttest h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.firsttest img {
+  width: 14rem;
+  margin: 12px;
+}
+
+/* Gallery Section */
+.gallerytitle h1 {
+  width: fit-content;
+  margin: auto;
+  margin-top: 42px;
+  margin-bottom: 50px;
+  size: 34px;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 18px;
+  width: 97%;
+  height: 15rem;
+}
+
+#Career-images {
+  width: 70%;
+}
+
+.gallery h3 {
+  font-size: 14px;
+  width: fit-content;
+  margin: auto;
+}
+
+.gallery img {
+  width: 14rem;
+  border-radius: 1rem;
+}
+
+.gallery img:hover {
+  width: 19rem;
+  transition: 1s ease;
+}
+
+/* Experiences */
+.My_experiences {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 98%;
+  margin: auto;
+  margin-top: 12px;
+}
+
+.firstexperiences {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--Tertiary-color);
+  margin: 12px;
+  width: 100%;
+}
+
+.firstexperiences img {
+  width: 20rem;
+  margin: 12px;
+}
+
+.textexp {
+  margin: 0px 10px;
+  width: 60%;
+  padding: 13px;
+}
+
+.firstexperiences p {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+/* Contacts */
+.formfillup {
+  border: 3px solid var(--Tertiary-color);
+  height: 27rem;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formfillup div {
+  margin: 12px;
+  display: block;
+}
+
+.formfillup input {
+  display: block;
+  width: 19rem;
+  height: 1.5rem;
+}
+
+.formfillup span {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+#submit input {
+  display: inline;
+  margin-top: 1.5rem;
+  background-color: #e09eff;
+  width: 7rem;
+  border-radius: 0.5rem;
+  margin: auto;
+  font-weight: 600;
+
+  transition: 0.6s ease;
+  font-size: 1.1 rem;
+  color: aliceblue;
+}
+
+#submit input:hover {
+  cursor: pointer;
+  width: 7.1rem;
+  font-size: 1.111222rem;
+  transition: 0.6s ease;
+}
+
+/* Footer Section */
+.footersection {
+  margin-top: 1rem;
+  height: 9rem;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f9f9fc;
+}
+
+.footersection .socialicons a {
+  text-decoration: none;
+  color: #1f2044;
+  font-size: 2.3rem;
+  padding: 0.7rem;
+}
+
+.footersection h4 {
+  margin: 0.6rem 0rem;
+
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.footersection h4 span {
+  font-weight: 500;
+}
+
+.footersection .socialicons a:hover {
+  font-size: 2.4rem;
+}
